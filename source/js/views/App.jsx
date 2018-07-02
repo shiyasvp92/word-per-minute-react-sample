@@ -4,8 +4,6 @@ import { hot } from 'react-hot-loader';
 import { routeCodes } from 'constants/routes';
 import Menu from 'components/global/Menu';
 import Home from 'views/Home';
-import People from 'views/People';
-import NotFound from 'views/NotFound';
 
 
 class App extends Component {
@@ -17,8 +15,6 @@ class App extends Component {
         <div className='Page'>
           <Switch>
             <Route exact path={ routeCodes.HOME } component={ Home } />
-            <Route path={ routeCodes.PEOPLE } component={ People } />
-            <Route path='*' component={ NotFound } />
           </Switch>
         </div>
       </div>
